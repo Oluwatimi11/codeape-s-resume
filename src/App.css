@@ -174,7 +174,7 @@
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 99;
-      height: 110vh;
+      height: 50vh;
       font-size: 1.5rem;
   }
 
@@ -216,7 +216,7 @@
 
   #mobile-menu {
       position: absolute;
-      top: 5%;
+      top: 20%;
       right: 5%;
       transform: translate(5%, 20%);
   }
