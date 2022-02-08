@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import Navbar from '../components/Navbar';
 
 function Header() {
+  
+  // constructor(props) {
+  //   super(props)
+  //   state = ([]);
+
+  //   this.handleOnClick = this.handleOnClick.bind(this);
+  // }
+  const [state, setState] = useState(false);
+
+
+  const handleOnClick = () => {
+    // console.log('Hello Sam')
+      setState(!state);
+  };
+  
   return (
     <React.Fragment>
       <nav className="navbar">
@@ -11,7 +27,7 @@ function Header() {
               codeApe
             </a>
           </div>
-          <div className="navbar__toggle" id="mobile-menu">
+          <div className="navbar__toggle"  onClick={handleOnClick} id="mobile-menu">
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
@@ -40,6 +56,7 @@ function Header() {
           </ul>
         </div>
       </nav>
+      {state && <Navbar />}
     </React.Fragment>
   );
 }
