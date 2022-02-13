@@ -35,7 +35,7 @@ function Navbar() {
                     </a>
                     </li>
                     <li className="navbar__btn">
-                    <a href="https://discord.gg/p7wT3wYxkm" className="button" id="signup">
+                    <a href="https://discord.gg/Yz9hhHcEb7" className="button" id="signup">
                         Join Discord
                     </a>
                     </li>
